@@ -1,0 +1,19 @@
+version: 2
+updates:
+  # Python (requirements in virtualenv)
+  - package-ecosystem: "pip"
+    directory: "/"  # root directory (or change if using a /src layout)
+    schedule:
+      interval: "weekly"
+    allow:
+      - dependency-type: "direct"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+
+  # GitHub Actions workflow updates (if you add CI later)
+  - package-ecosystem: "github-actions"
+    directory: "/" 
+    schedule:
+      interval: "weekly"
