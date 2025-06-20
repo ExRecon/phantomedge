@@ -1,0 +1,35 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs and runtime files
+*.log
+logs/
+
+# Output files from scans
+*.txt
+*.html
+
+# Environment files
+.env
+venv/
+ENV/
+env/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Installer artifacts
+*.deb
+*.zip
+*.tar.gz
+
+# Backup files
+*.bak
+*.swp
+
+# VSCode & IDE configs
+.vscode/
+.idea/
